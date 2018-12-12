@@ -1,0 +1,18 @@
+https://codeburst.io/redux-a-crud-example-abb834d763c9
+
+- The entire state of our application lives inside an object called the store
+- In order to update the state, we need to dispatch an action.
+- Actions are nothing but Javascript objects with a type property which describes the event taking place.
+- Once the action has been dispatched, it is recieved by the reducer.
+- The reducer takes in the current state of the application and the dispatched action, 
+  and then produces the next state of the application based on the action.type
+
+- For our React application to use the Redux store, we use the Provider component,
+  which is provided by the react-redux library. The Provider component is put at the root of 
+  all the components.
+- In order to acces our Redux store within our React components, we use the special connect() function. 
+  This function gives us access to dispatch and when we pass in mapStateProps, it gives us access to the state.
+- mapStateProps is a function that takes in the state of our application as a parameter and returns an object
+  with keys of that object becoming the props of the component. So whenever we use this.props.key_name we get
+  back the state we need.
+

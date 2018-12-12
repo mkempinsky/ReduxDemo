@@ -1,0 +1,131 @@
+h3 {
+  text-align: left;
+  color: #8c8c8c;
+}
+hr {
+  border-color: #aaa;
+  border-style: solid;
+}
+input,
+textarea,
+button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: #aaa;
+}
+input,
+textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #000;
+  box-shadow: -2px 3px 10px rgba(000, 000, 000, 0.075);
+}
+textarea {
+  min-height: 150px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #c1c1c1;
+}
+input:hover,
+textarea:hover {
+  box-shadow: -2px 3px 10px rgba(000, 000, 000, 0.2);
+  cursor: pointer;
+}
+input:focus,
+textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+button:focus {
+  outline: 0;
+}
+button:hover {
+  cursor: pointer;
+  background: #ccc;
+  color: #fff;
+}
+button.edit {
+  color: #6c41b3;
+  border: 1px solid #6c41b3;
+}
+button.edit:hover {
+  color: #fff;
+  background: #6c41b3;
+}
+button.delete {
+  color: #ac090a;
+  border: 1px solid #ac090a;
+  margin-left: 10px;
+}
+button.delete:hover {
+  color: #fff;
+  background: #ac090a;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.Post {
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #6c41b3;
+  padding: 5px 10px;
+  margin: 10px auto;
+  text-align: left;
+  color: #8c8c8c;
+}
+.Post .post-content {
+  min-height: 90px;
+  color: #8c8c8c;
+}
+.Post h3 {
+  color: #6c41b3;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #6c41b3;
+}
+.Post .date {
+  font-size: 10px;
+}
+.PostForm {
+  width: 350px;
+  height: 310px;
+  margin: 10px auto;
+  text-align: left;
+}
+.PostFormFixed {
+  position: relative;
+  border: 1px solid #55d4fa;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+@media screen and (min-width: 768px) {
+  .PostFormFixed {
+    position: fixed;
+  }
+}
+.PostForm h3 {
+  color: #55d4fa;
+}
+.AllPosts {
+  width: 350px;
+  margin: 0 auto;
+}
+@media scren and (min-width: 768px) {
+  .PostForm,
+  .AllPosts {
+    margin: 0 auto;
+  }
+}
+.container {
+  display: block;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
